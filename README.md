@@ -6,7 +6,7 @@ En este repositorio de trabajo encontrarás el archivo "activity.h". En este arc
 ```
 // =========================================================
 // File: activity.h
-// Author: Arturo Diaz - A01709522
+// Author: Edward Elric - A00123456
 // Date: 01/01/2021
 // =========================================================
 ```
