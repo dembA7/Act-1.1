@@ -1,10 +1,11 @@
 // =================================================================
 //
 // File: activity.h
-// Author:
-// Date:
+// Author: Arturo Diaz
+// Date: 27/08/22
 //
 // =================================================================
+
 #ifndef ACTIVITY_H
 #define ACTIVITY_H
 
@@ -16,9 +17,20 @@
 // @return	The result of the addition from 1 to n.
 // @Complexity	??
 // =================================================================
+
+
 unsigned int sumaIterativa(unsigned int n) {
-	return 0;
+  
+  unsigned int sum = 0;
+  for 
+    (unsigned int i = 1; i <= n; i++){
+      sum += i;
+    }
+	return sum;
 }
+
+// --> @Complexity	O(n)
+
 
 // =================================================================
 // sumaRecursiva. Calculate the sum from 1 to n with an recursive
@@ -28,9 +40,21 @@ unsigned int sumaIterativa(unsigned int n) {
 // @return	The result of the addition from 1 to n.
 // @Complexity	??
 // =================================================================
+
+
 unsigned int sumaRecursiva(unsigned int n) {
-	return 0;
+  
+	if (n == 1){
+    return 1;
+  }
+
+  else {
+    return n + sumaRecursiva(n - 1);
+  }
 }
+
+// --> @Complexity	O(n)
+
 
 // =================================================================
 // sumaDirecta. Calculate the sum from 1 to n with a mathematical
@@ -40,8 +64,12 @@ unsigned int sumaRecursiva(unsigned int n) {
 // @return	The result of the addition from 1 to n.
 // @Complexity	??
 // =================================================================
+
+
 unsigned int sumaDirecta(unsigned int n) {
-	return 0;
+	return (n * (n + 1)) / 2;
 }
+
+// --> @Complexity	O(1)
 
 #endif /* ACTIVITY_H */
